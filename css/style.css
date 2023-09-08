@@ -38,6 +38,13 @@ footer .redes a {
   padding: 30px;
 }
 
+#acerca-de-prologo h3 {
+  font-size: 2.5rem;
+}
+#acerca-de-prologo p {
+  font-size: 1.2rem;
+}
+
 #esta-soy .row {
   margin-top: 30px;
 }
@@ -45,7 +52,13 @@ footer .redes a {
   margin: 30px;
   max-height: 30vh;
   border-radius: 300px;
-  box-shadow: -2px 5px 25px #888888;
+  box-shadow: -2px 5px 5px #888888;
+}
+
+#intereses-img .container-fluid {
+  margin-top: 50px;
+  margin-bottom: 30px;
+  padding: 0;
 }
 
 #frases-inspiran {
@@ -54,6 +67,8 @@ footer .redes a {
 }
 #frases-inspiran .card {
   margin: 5px;
+  text-align: center;
+  height: 180px;
 }
 
 .card {
@@ -88,10 +103,15 @@ a {
 #coinvestigadores .col-12 .card {
   background-color: #b7bec4;
   border-radius: 15px;
+  padding: 10px;
 }
 #coinvestigadores .col-12 .card .col-md-4 img {
   margin: 10px;
   border-radius: 180px;
+  padding-right: 25px;
+}
+#coinvestigadores .carousel img {
+  border-radius: 15px;
 }
 
 main #prologo button {
@@ -106,6 +126,9 @@ main #header-foto img {
   width: 100%;
   max-height: 70vh;
   object-fit: cover;
+}
+main #header-foto p, main #header-foto h3 {
+  text-shadow: 2px 2px 5px #000000;
 }
 main #header-foto .overlay {
   overflow: hidden;
@@ -137,13 +160,14 @@ main #intereses-img .carousel-item img {
   max-height: 100vh;
   object-fit: fill;
 }
+main #intereses-img .carousel-item h5, main #intereses-img .carousel-item p {
+  text-shadow: 2px 2px 5px #000000;
+}
 main #intereses-img .carousel-item h5 {
   font-size: 2.5rem;
-  text-shadow: -2px 5px 5px #000000;
 }
 main #intereses-img .carousel-item p {
   font-size: 1.5rem;
-  text-shadow: -2px 5px 5px #000000;
 }
 main #enlaces-externos {
   padding: 50px;

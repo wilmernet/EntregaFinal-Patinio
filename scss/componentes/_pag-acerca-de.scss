@@ -1,3 +1,12 @@
+#acerca-de-prologo{
+    h3{
+        font-size: 2.5rem;
+    }
+    p{
+        font-size: 1.2rem;
+    }
+}
+
 #esta-soy{
     .row{
         margin-top: 30px;
@@ -6,15 +15,25 @@
         margin: 30px;
         max-height: 30vh;
         border-radius: 300px;  
-        box-shadow: -2px 5px 25px #888888;
+        box-shadow: -2px 5px 5px #888888;
     }
     
+}
+
+#intereses-img{
+    .container-fluid{
+        margin-top: 50px;
+        margin-bottom: 30px;
+        padding: 0;        
+    }
 }
 
 #frases-inspiran{
     padding-top: 30px;
     padding-bottom: 30px;
     .card{
-        margin: 5px;    
+        margin: 5px;   
+        text-align: center;
+        height: 180px;
     }
 }

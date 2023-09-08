@@ -2,17 +2,26 @@
     .container{
         margin-top: 20px;               
     }
+
     .col-12{        
         .card{                        
             background-color: $color-card-equipo;            
             border-radius: 15px;
+            padding: 10px;
             .col-md-4{
                 img{
                     margin: 10px;  
                     border-radius: 180px;                
+                    padding-right: 25px;
                 }
             }
             
+        }
+    }
+
+    .carousel{    
+        img{
+            border-radius: 15px;
         }
     }
 }
