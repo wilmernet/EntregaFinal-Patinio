@@ -137,14 +137,21 @@ main #intereses-img .carousel-item img {
   max-height: 100vh;
   object-fit: fill;
 }
-
-aside {
-  padding: 30px;
+main #intereses-img .carousel-item h5 {
+  font-size: 2.5rem;
+  text-shadow: -2px 5px 5px #000000;
 }
-aside .btn a {
+main #intereses-img .carousel-item p {
+  font-size: 1.5rem;
+  text-shadow: -2px 5px 5px #000000;
+}
+main #enlaces-externos {
+  padding: 50px;
+}
+main #enlaces-externos .btn a {
   color: #6c757d;
 }
-aside .btn a:hover {
+main #enlaces-externos .btn a:hover {
   color: rgb(239, 239, 234);
 }
 
