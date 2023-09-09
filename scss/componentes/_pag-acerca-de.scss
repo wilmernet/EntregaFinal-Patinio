@@ -8,8 +8,10 @@
 }
 
 #esta-soy{
+    
     .row{
-        margin-top: 30px;
+        margin-bottom: 50px;
+        margin-top: 50px;    
     }
     img{        
         margin: 30px;
@@ -20,20 +22,12 @@
     
 }
 
-#intereses-img{
-    .container-fluid{
-        margin-top: 50px;
-        margin-bottom: 30px;
-        padding: 0;        
-    }
-}
-
 #frases-inspiran{
     padding-top: 30px;
     padding-bottom: 30px;
     .card{
         margin: 5px;   
         text-align: center;
-        height: 180px;
-    }
+        min-height: 180px;
+    }    
 }

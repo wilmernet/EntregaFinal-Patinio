@@ -7,39 +7,49 @@
 @import './componentes/pag-contacto';
 @import './componentes/pag-equipo-trabajo';
 
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 
 main{
     #prologo{
         button{
             border: solid white;
             color: white;
+        }    
+        .col{
+                padding: 0px;                
         }
-    }
-    #header-foto{
-        position: relative;
-        padding: 0;    
-        img{
+        #header-foto{  
+            margin: 0px;      
             width: 100%;
-            max-height: 70vh;
-            object-fit:cover;            
-        }
-        p, h3{
-            text-shadow: 2px 2px 5px #000000;            
-        }
-        .overlay{
-            overflow: hidden;
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            background-color: rgba($color: #000, $alpha: 0.5);        
-            color: white;
-            .container,.row{
-                height: 100%;
+            position: relative;            
+            img{
+                width: 100%;
+                max-height: 70vh;
+                object-fit: cover;            
+            }
+            p, h3{
+                text-shadow: 2px 2px 5px #000000;            
+            }
+            .overlay{
+                overflow: hidden;
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                background-color: rgba($color: #000, $alpha: 0.5);        
+                color: white;
+                .container,.row{
+                    height: 100%;
+                }
             }
         }
     }
+    
     #productos{
         .row{
             padding: 20px;
@@ -56,25 +66,34 @@ main{
             }
         }  
     } 
-    #intereses-img{
-        .carousel-item{
-            img{                
-                max-height: 100vh;
-                object-fit:fill;
-            }
-            h5, p{
-                text-shadow: 2px 2px 5px #000000;     
-            }
-            h5{
-                font-size: 2.5rem;                
-            }  
-            p{
-                font-size: 1.5rem;                
-            }  
 
-        }
+    #intereses-img{    
+        .container-fluid{
+            padding: 0px;;
+            .row{
+                margin: 0px;  
+                .col{
+                    padding: 0px;
+                    .carousel-item{
+                        img{                
+                            max-height: 100vh;
+                            object-fit: cover;                    
+                        }
+                    }
+                    h5, p{
+                        text-shadow: 2px 2px 5px #000000;     
+                    }
+                    h5{
+                        font-size: 2.5rem;                
+                    }  
+                    p{
+                        font-size: 1.5rem;                
+                    }  
+                }              
+            }                        
+        }            
     }
-
+        
     #enlaces-externos{
         padding: 50px;
         .btn{
@@ -88,4 +107,3 @@ main{
     }
 
 }
-

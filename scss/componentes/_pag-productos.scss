@@ -1,9 +1,21 @@
 @import '../base/colores';
-.card{
-    margin-top: 30px;    
-}
 
-a{
-    color: $color-iconos-enlaces;
-}
 
+// MODIFICA EL FONDO DEL TÍTULO
+
+.articulos, .tesis, .sustentaciones{    
+    padding: 40px 100px 40px 100px;    
+    @media (max-width: 480px) {
+        padding: 10px;        
+    }    
+    
+    .card{
+        margin-top: 30px;        
+        a{
+            color: $color-iconos-enlaces;
+            &:hover{                                            
+                font-weight: bold;
+            }
+        }    
+    }
+}

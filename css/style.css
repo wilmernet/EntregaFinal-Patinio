@@ -1,22 +1,32 @@
 header .superior p {
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: bold;
   width: 50vw;
 }
+@media (min-width: 480px) {
+  header .superior p {
+    font-size: 3rem;
+  }
+}
 header .last-name {
   position: relative;
-  top: -30px;
+  top: -25px;
 }
 header .capital {
   font-size: 3.5rem;
-  border: solid;
   position: relative;
-  top: -4px;
+  top: -2px;
   left: 1px;
   padding: 18px 3px 0px 3px;
   background-color: #fff;
-  color: #000;
+  color: rgb(33, 37, 41);
   text-align: right;
+}
+@media (max-width: 480px) {
+  header .capital {
+    font-size: 2.5rem;
+    border: none;
+  }
 }
 
 footer {
@@ -38,6 +48,10 @@ footer .redes a {
   padding: 30px;
 }
 
+a {
+  color: rgb(80, 76, 76);
+}
+
 #acerca-de-prologo h3 {
   font-size: 2.5rem;
 }
@@ -46,19 +60,14 @@ footer .redes a {
 }
 
 #esta-soy .row {
-  margin-top: 30px;
+  margin-bottom: 50px;
+  margin-top: 50px;
 }
 #esta-soy img {
   margin: 30px;
   max-height: 30vh;
   border-radius: 300px;
   box-shadow: -2px 5px 5px #888888;
-}
-
-#intereses-img .container-fluid {
-  margin-top: 50px;
-  margin-bottom: 30px;
-  padding: 0;
 }
 
 #frases-inspiran {
@@ -68,15 +77,25 @@ footer .redes a {
 #frases-inspiran .card {
   margin: 5px;
   text-align: center;
-  height: 180px;
+  min-height: 180px;
 }
 
-.card {
+.articulos, .tesis, .sustentaciones {
+  padding: 40px 100px 40px 100px;
+}
+@media (max-width: 480px) {
+  .articulos, .tesis, .sustentaciones {
+    padding: 10px;
+  }
+}
+.articulos .card, .tesis .card, .sustentaciones .card {
   margin-top: 30px;
 }
-
-a {
+.articulos .card a, .tesis .card a, .sustentaciones .card a {
   color: rgb(80, 76, 76);
+}
+.articulos .card a:hover, .tesis .card a:hover, .sustentaciones .card a:hover {
+  font-weight: bold;
 }
 
 #formulario {
@@ -114,23 +133,33 @@ a {
   border-radius: 15px;
 }
 
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 main #prologo button {
   border: solid white;
   color: white;
 }
-main #header-foto {
-  position: relative;
-  padding: 0;
+main #prologo .col {
+  padding: 0px;
 }
-main #header-foto img {
+main #prologo #header-foto {
+  margin: 0px;
+  width: 100%;
+  position: relative;
+}
+main #prologo #header-foto img {
   width: 100%;
   max-height: 70vh;
   object-fit: cover;
 }
-main #header-foto p, main #header-foto h3 {
+main #prologo #header-foto p, main #prologo #header-foto h3 {
   text-shadow: 2px 2px 5px #000000;
 }
-main #header-foto .overlay {
+main #prologo #header-foto .overlay {
   overflow: hidden;
   position: absolute;
   top: 0;
@@ -140,7 +169,7 @@ main #header-foto .overlay {
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
 }
-main #header-foto .overlay .container, main #header-foto .overlay .row {
+main #prologo #header-foto .overlay .container, main #prologo #header-foto .overlay .row {
   height: 100%;
 }
 main #productos .row {
@@ -156,17 +185,26 @@ main #productos .row .card .iconos-productos {
   font-size: 60px;
   color: rgb(77, 76, 76);
 }
-main #intereses-img .carousel-item img {
-  max-height: 100vh;
-  object-fit: fill;
+main #intereses-img .container-fluid {
+  padding: 0px;
 }
-main #intereses-img .carousel-item h5, main #intereses-img .carousel-item p {
+main #intereses-img .container-fluid .row {
+  margin: 0px;
+}
+main #intereses-img .container-fluid .row .col {
+  padding: 0px;
+}
+main #intereses-img .container-fluid .row .col .carousel-item img {
+  max-height: 100vh;
+  object-fit: cover;
+}
+main #intereses-img .container-fluid .row .col h5, main #intereses-img .container-fluid .row .col p {
   text-shadow: 2px 2px 5px #000000;
 }
-main #intereses-img .carousel-item h5 {
+main #intereses-img .container-fluid .row .col h5 {
   font-size: 2.5rem;
 }
-main #intereses-img .carousel-item p {
+main #intereses-img .container-fluid .row .col p {
   font-size: 1.5rem;
 }
 main #enlaces-externos {

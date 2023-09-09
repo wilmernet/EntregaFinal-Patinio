@@ -55,32 +55,36 @@
     <!-- inicia el main -->
     <main>   
 
-    <!-- Prologo del index -->
+    <!-- SECTION 1: Prologo del index -->
       <section id="prologo">
-        <div class="row">
-          <div id="header-foto" class="col">
-            <img src="./img/Emmy-petroglifos-Guainia.jpeg" alt="Fotografiando">
-              <div class="overlay">
-                <div class="container">
-                  <div class="row align-items-center">
-                    <div class="col-md-8">
-                      <h3>Conservación de la Biodiversidad Andino-Amazonica</h3>
-                      <p>Coordino un semillero de investigación en el que junto a un equipo de estudiantes, enfocamos esfuerzos en conocer cada vez más, la inmensidad de la biodiversidad de nuestro territorio...</p>
-                      <a href="./html/acerca-de.html#prologo">
-                        <button id="leer-mas" class="btn btn-outline-dark me-md-2 border-1" type="button">
-                          Leer más...
-                        </button>
-                      </a>                      
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col">
+              <div id="header-foto">
+                <img src="./img/Emmy-petroglifos-Guainia.jpeg" alt="Fotografiando">
+                  <div class="overlay">
+                    <div class="container">
+                      <div class="row align-items-center">
+                        <div class="col-md-8">
+                          <h3>Conservación de la Biodiversidad Andino-Amazonica</h3>
+                          <p>Coordino un semillero de investigación en el que junto a un equipo de estudiantes, enfocamos esfuerzos en conocer cada vez más, la inmensidad de la biodiversidad de nuestro territorio...</p>
+                          <a href="./html/acerca-de.html#prologo">
+                            <button id="leer-mas" class="btn btn-outline-dark me-md-2 border-1" type="button">
+                              Leer más...
+                            </button>
+                          </a>                      
+                        </div>
+                      </div>
                     </div>
                   </div>
-                </div>
+                </div>            
               </div>
-            </div>            
+            </div>                    
           </div>
-        </div>
+        </div>        
       </section>
 
-      <!-- SECCION 1: PRODUCTOS -->
+      <!-- SECCION 2: Productos -->
       <section id="productos">
         <div class="container-fluid">
           <div class="row justify-content-evenly">            
@@ -89,7 +93,7 @@
               <div class="card-body">
                 <h5 class="card-title">Próximas sustentaciones</h5>
                 <p class="card-text">Trabajos de opción de grado del equipo de estudiantes próximos a sustentar.</p>
-                <a href="./html/productos.html#trabajos-por-sustentar" class="btn btn-secondary">mas...</a>
+                <a href="./html/productos.html#trabajos-por-sustentar" class="btn btn-secondary">Mas...</a>
               </div>
             </div>
             <div class="card" style="width: 18rem;">              
@@ -97,7 +101,7 @@
               <div class="card-body">
                 <h5 class="card-title">Productos en Marcha</h5>
                 <p class="card-text">Proyectos de investigación que se encuentran actualmente en ejecución.</p>
-                <a href="./html/productos.html#trabajos-de-grado" class="btn btn-secondary">mas...</a>                
+                <a href="./html/productos.html#trabajos-de-grado" class="btn btn-secondary">Mas...</a>                
               </div>
             </div>
             <div class="card" style="width: 18rem;">              
@@ -105,56 +109,62 @@
               <div class="card-body">
                 <h5 class="card-title">Áreas de interés</h5>
                 <p class="card-text">Temas en los que trabajamos con los diferentes miembros del equipo.</p>
-                <a href="./html/acerca-de.html#areas-interes" class="btn btn-secondary">mas...</a>
+                <a href="./html/acerca-de.html#areas-interes" class="btn btn-secondary">Mas...</a>
               </div>
             </div>
           </div>
         </div>
       </section>  
+
+      <!-- SECTION 3: imágenes de interes -->
       <section id="intereses-img">
-        <div class="row">
-          <div class="col">            
-            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-              <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col">            
+              <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active" ta-bs-interval="500">
+                    <img src="./img/puente-madera.jpeg" class="d-block w-100" alt="Bosque">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Senderos de vida</h5>
+                      <p>El conocimiento de nuestra fauna y flora me ha llevado por caminos que valen la pena recorrer.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./img/Emmy-borde-montaña.jpeg" class="d-block w-100" alt="Chica sobre hojas">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Una con la naturaleza</h5>
+                      <p>Siempre será un placer estar junto y entre la naturaleza.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./img/emmy-con-binoculares.jpeg" class="d-block w-100" alt="Ave Martín pescador">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Ornitologa de corazón</h5>
+                      <p>Si bien trabajo en biología de la conservación, la ornitología es mi pasión.</p>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Siguiente</span>
+                </button>
               </div>
-              <div class="carousel-inner">
-                <div class="carousel-item active" ta-bs-interval="500">
-                  <img src="./img/puente-madera.jpeg" class="d-block w-100" alt="Bosque">
-                  <div class="carousel-caption d-none d-md-block">
-                    <h5>Senderos de vida</h5>
-                    <p>El conocimiento de nuestra fauna y flora me ha llevado por caminos que valen la pena recorrer.</p>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <img src="./img/Emmy-borde-montaña.jpeg" class="d-block w-100" alt="Chica sobre hojas">
-                  <div class="carousel-caption d-none d-md-block">
-                    <h5>Una con la naturaleza</h5>
-                    <p>Siempre será un placer estar junto y entre la naturaleza.</p>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <img src="./img/emmy-con-binoculares.jpeg" class="d-block w-100" alt="Ave Martín pescador">
-                  <div class="carousel-caption d-none d-md-block">
-                    <h5>Ornitologa de corazón</h5>
-                    <p>Si bien trabajo en biología de la conservación, la ornitología es mi pasión.</p>
-                  </div>
-                </div>
-              </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Anterior</span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Siguiente</span>
-              </button>
             </div>
-          </div>
-        </div>            
+          </div>    
+        </div>                
       </section>
+
+      <!-- SECTION 4: Enlaces de interés -->
       <section id="enlaces-externos">
           <div class="container-fluid">
             <div class="row">
@@ -187,9 +197,6 @@
           </div>
         </section>
     </main>    
-    
-    <!-- inicia el aside -->
-    
 
     <!-- inicia el footer -->
     <footer>
