@@ -28,14 +28,6 @@ header .capital {
     border: none;
   }
 }
-header .contenedor-titulo {
-  -webkit-transition: 1s linear;
-  transition: 1s linear;
-}
-header .contenedor-titulo:hover {
-  -webkit-transform: perspective(150px) rotateX(45deg);
-  transform: perspective(150px) rotateX(45deg);
-}
 
 footer {
   color: white;
@@ -145,6 +137,21 @@ a {
 }
 #coinvestigadores .carousel img {
   border-radius: 15px;
+}
+
+.main-404 .file404 {
+  color: white;
+  border-radius: 20px;
+  padding: 50px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  background-color: rgb(128, 128, 128);
+}
+.main-404 .file404 p {
+  color: white;
+}
+.main-404 .file404 p:hover {
+  font-weight: bold;
 }
 
 * {
