@@ -122,6 +122,97 @@ a {
   border: solid #fff;
 }
 
+#contenedor-formularios {
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+#contenedor-formularios h2, #contenedor-formularios p {
+  text-shadow: 1px 1px 5px #000;
+  width: 100%;
+  text-align: center;
+}
+#contenedor-formularios #formulario-contacto {
+  background-color: #6c757d;
+  border-radius: 15px;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 30px;
+  width: 60%;
+  margin: 50px;
+}
+#contenedor-formularios #formulario-contacto #texto-mensaje {
+  padding: 10px;
+  flex: 1 2 80%;
+  height: 300px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+#contenedor-formularios #formulario-contacto label {
+  font-size: 0.9rem;
+  font-weight: 200;
+}
+#contenedor-formularios #formulario-contacto #identificacion {
+  margin-bottom: 20px;
+}
+@media (min-width: 480px) {
+  #contenedor-formularios #formulario-contacto #identificacion {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  #contenedor-formularios #formulario-contacto #identificacion #identificacion-nombre, #contenedor-formularios #formulario-contacto #identificacion #identificacion-apellido {
+    flex: 1 1 30%;
+    flex-wrap: wrap;
+    display: flex;
+    align-items: baseline;
+  }
+  #contenedor-formularios #formulario-contacto #identificacion #identificacion-nombre #nombres, #contenedor-formularios #formulario-contacto #identificacion #identificacion-nombre #apellido, #contenedor-formularios #formulario-contacto #identificacion #identificacion-apellido #nombres, #contenedor-formularios #formulario-contacto #identificacion #identificacion-apellido #apellido {
+    flex: 1 1 70%;
+  }
+}
+#contenedor-formularios #formulario-contacto #identificacion #identificacion-nombre #nombres, #contenedor-formularios #formulario-contacto #identificacion #identificacion-nombre #apellido, #contenedor-formularios #formulario-contacto #identificacion #identificacion-apellido #nombres, #contenedor-formularios #formulario-contacto #identificacion #identificacion-apellido #apellido {
+  border-radius: 5px;
+  width: 100%;
+}
+#contenedor-formularios #formulario-contacto input, #contenedor-formularios #formulario-contacto label, #contenedor-formularios #formulario-contacto button {
+  height: 2rem;
+}
+#contenedor-formularios #formulario-contacto #email {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+#contenedor-formularios #formulario-contacto #email #email-correo {
+  flex: 1 1 30%;
+  flex-wrap: wrap;
+  display: flex;
+  align-items: last baseline;
+}
+#contenedor-formularios #formulario-contacto #email #email-correo label {
+  margin-bottom: 10px;
+}
+#contenedor-formularios #formulario-contacto #email #email-correo #correo {
+  flex: 1 1 70%;
+  border-radius: 5px;
+  width: 100%;
+}
+#contenedor-formularios #formulario-contacto #email button {
+  width: 100px;
+  border: solid white;
+  border-radius: 5px;
+  border-width: 1px;
+  background: none;
+  font-weight: 200;
+}
+#contenedor-formularios #formulario-contacto #email button:hover {
+  background-color: rgb(52, 51, 51);
+  color: white;
+}
+
 #coinvestigadores .container {
   margin-top: 20px;
 }

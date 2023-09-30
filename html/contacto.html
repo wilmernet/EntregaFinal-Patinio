@@ -50,33 +50,38 @@
 
       <!-- Inicia el main -->
     <main>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 offset-lg-3">                    
-                    <div id="formulario" > 
-                        <h2 class="text-center">Contacto</h2>
-                        <p class="text-center">Si deseas comunicarte conmigo, envíame un correo electrónico y te estaré responiendo lo más pronto que me sea posible.</p>
-                        <div class="form-floating">
-                            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 200px"></textarea>
-                            <label for="floatingTextarea2">Escriba su mensaje aquí...</label>
-                        </div>
-                        <div class="input-group">
-                            <span class="input-group-text">Nombre(s)</span>
-                            <input type="text" aria-label="First name" class="form-control">                            
-                          </div>
-                        <div class="input-group">
-                            <span class="input-group-text">Apellido(s)</span>
-                            <input type="text" aria-label="Last name" class="form-control" id="apellido">                                                        
-                          </div>
-                        <div class="input-group">                            
-                            <span class="input-group-text">Correo electrónico</span>
-                            <input type="email" aria-label="First name" class="form-control">
-                        </div>                                                  
-                        <button class="btn btn-outline-dark border-1" type="button" id="button-addon2">Enviar</button>                        
-                    </div>                    
-                </div>
+        
+        <div id="contenedor-formularios">
+          <form id="formulario-contacto" action="">
+            <h2>Contacto</h2>
+            <p>Si deseas comunicarte conmigo, envíame un correo electrónico y te estaré responiendo lo más pronto que me sea posible.</p>                      
+            
+            <textarea id="texto-mensaje" placeholder="Ingrese su comentario aquí"></textarea>
+            
+            <div id="identificacion">
+              <div id="identificacion-nombre" class="ident">
+                <label for="nombres">Nombre(s)</label>
+              <input type="text" id="nombres">
+              </div>
+              
+              <div id="identificacion-apellido" class="ident">
+                <label for="apellido">Apellido(s)</label>
+                <input type="text" id="apellido">
+              </div>              
             </div>
-        </div>
+            
+            <div id="email">
+              <div id="email-correo">
+                <label for="correo" >Correo electrónico</label>
+                <input id="correo" type="email">
+              </div>              
+              
+              <button type="button">Enviar</button> 
+            </div>
+            
+          </form> 
+        </div>                   
+      
     </main>  
 
     <!-- inicia el footer -->

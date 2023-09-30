@@ -15,3 +15,104 @@
         border: solid #fff;
     }
 }
+
+// ---- ejercicio con flex ----
+
+#contenedor-formularios{
+    display: flex;   
+    justify-content: center;    
+    color: white;    
+    h2, p{
+        text-shadow: 1px 1px 5px #000;
+        width: 100%;        
+        text-align: center;
+    }
+    #formulario-contacto{        
+        background-color: $color-gris-formularios;
+        border-radius: 15px;
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 30px;
+        width: 60%;
+        margin: 50px;
+    
+        #texto-mensaje{
+            padding: 10px;
+            flex: 1 2 80%;
+            height: 300px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        label{
+            font-size: 0.9rem;
+            font-weight: 200;
+        }
+
+        #identificacion{
+            @media (min-width: 480px) {
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;          
+                gap: 20px;                     
+                #identificacion-nombre, #identificacion-apellido {                                        
+                    flex: 1 1 30%;
+                    flex-wrap: wrap;                          
+                    display: flex;       
+                    align-items: baseline;                                    
+                    #nombres, #apellido{                    
+                        flex: 1 1 70%;
+                    }                               
+                }                     
+            }            
+            #identificacion-nombre, #identificacion-apellido{                                
+                #nombres, #apellido{                    
+                    border-radius: 5px;                    
+                    width: 100%;
+                }           
+            }            
+            margin-bottom: 20px; 
+        }
+
+        input, label, button{            
+            height: 2rem;            
+        }
+
+        #email{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;          
+            gap: 20px;
+            #email-correo{                                                             
+                flex: 1 1 30%;
+                flex-wrap: wrap;                          
+                display: flex;       
+                align-items:last baseline;  
+                label{
+                    margin-bottom: 10px;
+                }
+                #correo{                 
+                    flex: 1 1 70%;
+                    border-radius: 5px;
+                    width: 100%;
+                }
+            }
+            button{                                     
+                width: 100px;    
+                border: solid white;
+                border-radius: 5px;
+                border-width: 1px;
+                background: none;            
+                font-weight: 200;                
+                &:hover{
+                    background-color: rgb(52, 51, 51);
+                    color: white;
+                }
+            }
+                        
+        }
+        
+    }
+}
+
