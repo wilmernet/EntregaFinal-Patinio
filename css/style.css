@@ -52,36 +52,62 @@ a {
   color: rgb(80, 76, 76);
 }
 
-#acerca-de-prologo h3 {
-  font-size: 2.5rem;
+#main {
+  display: grid;
+  grid-template-areas: "prologo prologo" "descripcion foto" "intereses intereses" "intereses-img intereses-img" "frases-inspiran frases-inspiran";
+  grid-template-columns: auto 33%;
 }
-#acerca-de-prologo p {
-  font-size: 1.2rem;
+@media (max-width: 480px) {
+  #main {
+    grid-template-areas: "prologo" "descripcion" "foto" "intereses" "intereses-img" "frases-inspiran";
+    grid-template-columns: 100%;
+    border: solid blue;
+  }
+  #main #foto-emmy {
+    min-width: 50vw;
+  }
 }
-
-#esta-soy .row {
-  margin-bottom: 50px;
-  margin-top: 50px;
+#main #prologo {
+  grid-area: prologo;
 }
-#esta-soy img {
+#main #auto-descipcion {
+  grid-area: descripcion;
+  padding: 30px;
+  text-align: justify;
+}
+#main #mi-foto {
+  grid-area: foto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#main #mi-foto #foto-emmy {
   margin: 30px;
-  max-height: 30vh;
-  border-radius: 300px;
+  max-width: 30vw;
+  border-radius: 50%;
   box-shadow: -2px 5px 5px #888888;
 }
-
-#frases-inspiran {
+#main #mis-intereses {
+  grid-area: intereses;
+  padding: 30px;
+  text-align: justify;
+}
+#main #intereses-img {
+  grid-area: intereses-img;
+}
+#main #frases-inspiran {
+  grid-area: frases-inspiran;
   padding-top: 30px;
   padding-bottom: 30px;
 }
-#frases-inspiran .card {
+#main #frases-inspiran .card {
   margin: 5px;
   text-align: center;
   min-height: 195px;
   padding: 10px;
 }
 @media (max-width: 768px) {
-  #frases-inspiran .card {
+  #main #frases-inspiran .card {
     min-height: 100px;
   }
 }
@@ -268,8 +294,13 @@ main #prologo #header-foto img {
   max-height: 70vh;
   object-fit: cover;
 }
-main #prologo #header-foto p, main #prologo #header-foto h3 {
+main #prologo #header-foto h3 {
+  font-size: 2.5rem;
   text-shadow: 2px 2px 5px #000000;
+}
+main #prologo #header-foto p {
+  text-shadow: 2px 2px 5px #000000;
+  font-size: 1.2rem;
 }
 main #prologo #header-foto .overlay {
   overflow: hidden;

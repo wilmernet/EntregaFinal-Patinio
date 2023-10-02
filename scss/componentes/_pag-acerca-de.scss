@@ -1,37 +1,110 @@
-#acerca-de-prologo{
-    h3{
-        font-size: 2.5rem;
+#main{
+    display: grid;
+    grid-template-areas: 
+    "prologo prologo"
+    "descripcion foto"
+    "intereses intereses"    
+    "intereses-img intereses-img"
+    "frases-inspiran frases-inspiran"
+    ;
+    grid-template-columns: auto 33%;
+    @media (max-width: 480px) {
+        grid-template-areas: 
+            "prologo"
+            "descripcion"
+            "foto"
+            "intereses"    
+            "intereses-img"
+            "frases-inspiran"
+            ;
+            grid-template-columns: 100%;
+            border: solid blue;
+            #foto-emmy{               
+                min-width: 50vw;
+            }
     }
-    p{
-        font-size: 1.2rem;
-    }
-}
 
-#esta-soy{
-    
-    .row{
-        margin-bottom: 50px;
-        margin-top: 50px;    
+    #prologo{
+        grid-area: prologo;          
     }
-    img{        
-        margin: 30px;
-        max-height: 30vh;
-        border-radius: 300px;  
-        box-shadow: -2px 5px 5px #888888;
-    }
-    
-}
 
-#frases-inspiran{
-    padding-top: 30px;
-    padding-bottom: 30px;
-    .card{
-        margin: 5px;   
-        text-align: center;
-        min-height: 195px;
-        padding: 10px;
-        @media (max-width: 768px) {            
-            min-height: 100px;
+    
+    #auto-descipcion{
+        grid-area: descripcion;
+        padding: 30px;
+        text-align: justify;
+    }
+    
+    #mi-foto{
+        grid-area: foto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        #foto-emmy{               
+            margin: 30px;
+            max-width: 30vw;
+            border-radius: 50%;              
+            box-shadow: -2px 5px 5px #888888;
         }
-    }    
+    }
+    #mis-intereses{
+        grid-area: intereses;
+        padding: 30px;
+        text-align: justify;
+    }
+        
+    #intereses-img{
+        grid-area: intereses-img;
+    }
+    #frases-inspiran{
+        grid-area: frases-inspiran;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        .card{
+            margin: 5px;   
+            text-align: center;
+            min-height: 195px;
+            padding: 10px;
+            @media (max-width: 768px) {            
+                min-height: 100px;
+            }
+        } 
+    }
 }
+// #acerca-de-prologo{
+//     h3{
+//         font-size: 2.5rem;
+//     }
+//     p{
+//         font-size: 1.2rem;
+//     }
+// }
+
+// #esta-soy{
+    
+//     .row{
+//         margin-bottom: 50px;
+//         margin-top: 50px;    
+//     }
+//     img{        
+//         margin: 30px;
+//         max-height: 30vh;
+//         border-radius: 300px;  
+//         box-shadow: -2px 5px 5px #888888;
+//     }
+    
+// }
+
+// #frases-inspiran{
+//     padding-top: 30px;
+//     padding-bottom: 30px;
+//     .card{
+//         margin: 5px;   
+//         text-align: center;
+//         min-height: 195px;
+//         padding: 10px;
+//         @media (max-width: 768px) {            
+//             min-height: 100px;
+//         }
+//     }    
+// }
