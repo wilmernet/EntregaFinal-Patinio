@@ -61,7 +61,6 @@ a {
   #main {
     grid-template-areas: "header" "prologo" "descripcion" "foto" "intereses" "intereses-img" "frases-inspiran" "footer";
     grid-template-columns: 100%;
-    border: solid blue;
   }
   #main #foto-emmy {
     min-width: 50vw;
