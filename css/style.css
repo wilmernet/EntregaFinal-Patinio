@@ -54,18 +54,24 @@ a {
 
 #main {
   display: grid;
-  grid-template-areas: "prologo prologo" "descripcion foto" "intereses intereses" "intereses-img intereses-img" "frases-inspiran frases-inspiran";
+  grid-template-areas: "header header" "prologo prologo" "descripcion foto" "intereses intereses" "intereses-img intereses-img" "frases-inspiran frases-inspiran" "footer footer";
   grid-template-columns: auto 33%;
 }
 @media (max-width: 480px) {
   #main {
-    grid-template-areas: "prologo" "descripcion" "foto" "intereses" "intereses-img" "frases-inspiran";
+    grid-template-areas: "header" "prologo" "descripcion" "foto" "intereses" "intereses-img" "frases-inspiran" "footer";
     grid-template-columns: 100%;
     border: solid blue;
   }
   #main #foto-emmy {
     min-width: 50vw;
   }
+}
+#main #acerda-de-header {
+  grid-area: header;
+}
+#main #prologo {
+  grid-area: prologo;
 }
 #main #prologo {
   grid-area: prologo;
@@ -110,6 +116,9 @@ a {
   #main #frases-inspiran .card {
     min-height: 100px;
   }
+}
+#main #acerda-de-footer {
+  grid-area: footer;
 }
 
 .articulos, .tesis, .sustentaciones {

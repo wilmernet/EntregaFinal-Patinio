@@ -1,27 +1,39 @@
 #main{
     display: grid;
     grid-template-areas: 
+    "header header"
     "prologo prologo"
     "descripcion foto"
     "intereses intereses"    
     "intereses-img intereses-img"
     "frases-inspiran frases-inspiran"
+    "footer footer"
     ;
     grid-template-columns: auto 33%;
     @media (max-width: 480px) {
         grid-template-areas: 
+            "header"
             "prologo"
             "descripcion"
             "foto"
             "intereses"    
             "intereses-img"
             "frases-inspiran"
+            "footer"
             ;
             grid-template-columns: 100%;
             border: solid blue;
             #foto-emmy{               
                 min-width: 50vw;
             }
+    }
+
+    #acerda-de-header{
+        grid-area: header;
+    }
+
+    #prologo{
+        grid-area: prologo;          
     }
 
     #prologo{
@@ -69,6 +81,10 @@
                 min-height: 100px;
             }
         } 
+    }
+
+    #acerda-de-footer{
+        grid-area: footer;
     }
 }
 // #acerca-de-prologo{
